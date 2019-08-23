@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function prcesconfirm (Answer) {
+       let result  =" ";
+       if (Answer){
+           result =  "excilent,we'll play a nice gmae of chess?"
+       } else {
+           result = "maybe later then"
+       }
+       return result;
+    }
+    let confirmAnswer = confirm("shall we play a game");
+    let thenAnswer = prcesconfirm(confirmAnswer);
+    alert(thenAnswer);
+</script>
+</body>
+</html>

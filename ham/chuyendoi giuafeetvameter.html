@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhapf" oninput="tinhfeet(this.value)"><br/>
+<p id="ketqua1">Feet</p>
+<input id="nhapm" oninput="tinhmeter(this.value)"><br/>
+<p id="ketqua2">Meter</p>
+<script>
+    function tinhfeet(numfeet) {
+        let num1=document.getElementById("nhapf").value;
+        numfeet=document.getElementById("ketqua1").innerHTML=3.279*num1;
+    }
+    function tinhmeter(nummeter) {
+        let num1=document.getElementById("nhapm").value;
+        nummeter=document.getElementById("ketqua2").innerHTML=0.305*num1;
+    }
+</script>
+</body>
+</html>

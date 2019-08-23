@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen Doi nhiet Do</title>
+</head>
+<body>
+<form>
+    <p>
+        Fahrenheit:<input id="nhap" type="number" oninput="tinh(this.value)"> <br/><span id="ketqua"></span>
+    </p>
+<script>
+function tinh(nhapdof) {
+    document.getElementById("ketqua").innerHTML = (nhapdof - 32)/1.8;
+}
+</script>
+</form>
+</body>
+</html>
